@@ -43,7 +43,7 @@ export const profile = {
   about: [
     'Estudo Análise e Desenvolvimento de Sistemas na FATEC São José dos Campos. Na enfermagem aprendi a trabalhar sob pressão, a me comunicar com clareza e a dar atenção aos detalhes, e levo isso para cada projeto.',
     'Gosto de construir soluções completas: da interface que a pessoa usa até a regra de negócio e o banco de dados. Tenho interesse especial em aplicações com inteligência artificial e em produtos que resolvem problemas reais.',
-    'Quase todos os meus projetos da faculdade foram feitos em equipe, com Scrum, sprints e validação com clientes reais, pela metodologia de Aprendizagem por Projeto Integrado (API) da FATEC.',
+    'Quase todos os meus projetos da faculdade foram feitos em equipe, com Scrum, sprints e validação com clientes reais, pela metodologia de Aprendizagem por Projeto Integrado (API) da FATEC. Desde o 3º semestre faço parte da Equipe Sul, onde desenvolvi o EntreNova Flix, o Blueprint e agora o Stentio.',
   ],
   photo,
   location: 'São José dos Campos, SP',
@@ -56,6 +56,42 @@ export const profile = {
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'stentio',
+    title: 'Stentio',
+    semester: 5,
+    period: 'ago – dez 2026',
+    context: 'Projeto Integrador (API) · Equipe Sul · em desenvolvimento',
+    summary:
+      'Sistema que centraliza a operação de uma agência de tradução: do pedido do cliente e do orçamento à execução em etapas e ao fechamento financeiro.',
+    highlights: [
+      'Arquitetura de microsserviços (autenticação, núcleo de negócio, e-mail, importação e chatbot) com Docker Compose',
+      'No backend, desenvolvi o fluxo da ordem de serviço: etapas, modelos de workflow e alocação de profissionais com auditoria',
+      'Portal do profissional com auto-cadastro, convite por e-mail, aceite e entrega das etapas',
+      'Revisão e entrega final da OS e certificação de profissionais por par de idiomas',
+      'Perfis de acesso com JWT e testes automatizados das regras de negócio',
+    ],
+    stack: ['Java', 'Spring Boot', 'PostgreSQL', 'MongoDB', 'RabbitMQ', 'Docker', 'React', 'TypeScript'],
+    repo: 'https://github.com/Equipe-SUL/Stentio',
+  },
+  {
+    slug: 'blueprint',
+    title: 'Blueprint',
+    semester: 4,
+    period: 'mar – jun 2026',
+    context: 'Projeto Integrador (API) · Equipe Sul',
+    summary:
+      'Aplicação web que gera automaticamente memoriais de cálculo, especificações e orçamentos de obras para o Exército Brasileiro a partir de arquivos CAD, CSV ou Excel.',
+    highlights: [
+      'Upload e validação das planilhas extraídas do CAD',
+      'Cálculo dos quantitativos de materiais em Python e conferência com a tabela SINAPI',
+      'Documentos técnicos gerados com IA local (Ollama), com prévia e exportação em PDF e DOCX',
+      'Cadastro de obras, login e painel para o engenheiro acompanhar seus projetos',
+    ],
+    stack: ['React', 'TypeScript', 'Python', 'Django', 'PostgreSQL', 'Ollama'],
+    repo: 'https://github.com/Equipe-SUL/Blueprint',
+    video: 'https://www.youtube.com/watch?v=aQZifRPN6wY',
+  },
   {
     slug: 'entrenova',
     title: 'EntreNova Flix',
@@ -194,7 +230,13 @@ export const skills = {
     'Java',
     'Python',
     'MySQL',
+    'Spring Boot',
+    'Django',
+    'PostgreSQL',
+    'MongoDB',
     'Prisma',
+    'Docker',
+    'RabbitMQ',
     'Git e GitHub',
     'APIs REST',
     'LLMs',
@@ -214,7 +256,7 @@ export const education = [
   {
     course: 'Análise e Desenvolvimento de Sistemas',
     institution: 'FATEC São José dos Campos',
-    period: '2024 – em andamento',
+    period: '2024 – em andamento · 5º semestre',
   },
 ]
 

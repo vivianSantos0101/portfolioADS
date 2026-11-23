@@ -29,15 +29,39 @@ Portfólio pessoal em **React + TypeScript** com todos os meus trabalhos da facu
 
 ## 👩‍💻 Sobre mim
 
-Fui enfermeira antes de programar. Hoje estudo **Análise e Desenvolvimento de Sistemas na FATEC São José dos Campos** e levo para o desenvolvimento a mesma atenção aos detalhes, comunicação clara e calma sob pressão que a enfermagem me ensinou.
+Fui enfermeira antes de programar. Hoje estou no 5º semestre de **Análise e Desenvolvimento de Sistemas na FATEC São José dos Campos** e levo para o desenvolvimento a mesma atenção aos detalhes, comunicação clara e calma sob pressão que a enfermagem me ensinou.
 
-Gosto de construir soluções completas, da interface até a regra de negócio e o banco de dados, e tenho interesse especial em aplicações com **inteligência artificial**. Quase todos os meus projetos foram feitos em equipe, com **Scrum** e validação com clientes reais, pela metodologia de Aprendizagem por Projeto Integrado (API) da FATEC.
+Gosto de construir soluções completas, da interface até a regra de negócio e o banco de dados, e tenho interesse especial em aplicações com **inteligência artificial**. Quase todos os meus projetos foram feitos em equipe, com **Scrum** e validação com clientes reais, pela metodologia de Aprendizagem por Projeto Integrado (API) da FATEC. Desde o 3º semestre faço parte da **Equipe Sul**, onde desenvolvi o EntreNova Flix, o Blueprint e agora o Stentio.
 
 🌎 Inglês e espanhol fluentes.
 
 ---
 
 ## 🚀 Projetos
+
+### 5º semestre (ago – dez 2026)
+
+#### Stentio · Projeto Integrador (API) · Equipe Sul · *em desenvolvimento*
+Sistema que centraliza a operação de uma agência de tradução: pedido do cliente, orçamento com aprovação por link, ordem de serviço com etapas, alocação de profissionais e fechamento financeiro. Arquitetura de microsserviços com Docker Compose.
+
+**O que eu desenvolvi (backend, 80+ commits):**
+- Fluxo da ordem de serviço: etapas, modelos de workflow e alocação de profissionais com log de auditoria
+- Portal do profissional: auto-cadastro, convite por e-mail aos elegíveis, aceite, recusa e entrega das etapas
+- Revisão e entrega final da OS, com e-mail ao cliente e documento em anexo
+- Certificação de profissionais por par de idiomas, com fila de análise e aprovação
+- CRUD de recursos e de tabela de preços, perfis de acesso com JWT e testes automatizados
+
+`Java` `Spring Boot` `PostgreSQL` `MongoDB` `RabbitMQ` `Docker` `React` `TypeScript` · [Repositório](https://github.com/Equipe-SUL/Stentio)
+
+### 4º semestre (mar – jun 2026)
+
+#### Blueprint · Projeto Integrador (API) · Equipe Sul
+Aplicação web que gera automaticamente memoriais de cálculo, especificações e orçamentos de obras para o **Exército Brasileiro** a partir de arquivos CAD, CSV ou Excel.
+- Cálculo dos quantitativos de materiais em Python e conferência com a tabela SINAPI
+- Documentos técnicos gerados com IA local (Ollama), com prévia e exportação em PDF e DOCX
+- Cadastro de obras, login e painel para o engenheiro
+
+`React` `TypeScript` `Python` `Django` `PostgreSQL` `Ollama` · [Repositório](https://github.com/Equipe-SUL/Blueprint) · [Vídeo](https://www.youtube.com/watch?v=aQZifRPN6wY)
 
 ### 3º semestre (ago – dez 2025)
 
