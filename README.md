@@ -82,6 +82,14 @@ Sistema de gestão da produção de aeronaves que construí em três etapas, cad
 | **AV2** | Interface web com rotas e telas por perfil | `React` `TypeScript` `Vite` | [AV2](https://github.com/vivianSantos0101/AV2) |
 | **AV3** | API REST, banco de dados, login com JWT e três perfis de acesso | `Express` `Prisma` `MariaDB` `JWT` `Zod` | [AV3](https://github.com/vivianSantos0101/AV3) |
 
+#### MCP Formula 1 · Interação Humano-Computador (IHC)
+Bot do Telegram que responde perguntas sobre a Fórmula 1 em linguagem natural, por **texto ou áudio**. Uma IA local transforma a pergunta em consulta SQL, e um **servidor MCP** expõe o banco de dados como ferramenta para ela.
+- Áudios transcritos com Whisper
+- LLM local (Qwen 2.5 via Ollama + LlamaIndex) gera a consulta estruturada
+- Escrita no banco liberada só para administradores (ID do Telegram)
+
+`Python` `MCP` `FastMCP` `Ollama` `Whisper` `SQLite` `Telegram Bot API` · [Repositório](https://github.com/vivianSantos0101/IHC)
+
 #### Portfólio em Express · Projeto pessoal
 Primeira versão deste portfólio, renderizada no servidor, com painel de administrador para editar projetos, habilidades e idiomas em MySQL e formulário que envia e-mail.
 

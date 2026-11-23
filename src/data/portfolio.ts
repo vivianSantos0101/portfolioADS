@@ -6,6 +6,7 @@ import botecho from '../assets/projects/botecho.webp'
 import easyscrum from '../assets/projects/easyscrum.webp'
 import entrenova from '../assets/projects/entrenova.webp'
 import gerenciador from '../assets/projects/gerenciador-cursos.webp'
+import mcp from '../assets/projects/mcp.webp'
 import photo from '../assets/vivian.webp'
 
 export type Stage = {
@@ -149,6 +150,25 @@ export const projects: Project[] = [
         repo: 'https://github.com/vivianSantos0101/AV3',
       },
     ],
+  },
+  {
+    slug: 'mcp-formula1',
+    title: 'MCP Formula 1',
+    semester: 3,
+    period: 'ago – dez 2025',
+    context: 'Interação Humano-Computador (IHC)',
+    summary:
+      'Bot do Telegram que responde perguntas sobre a Fórmula 1 em linguagem natural, por texto ou por áudio, usando uma IA que roda localmente e um servidor MCP para consultar o banco de dados.',
+    highlights: [
+      'Mensagens de voz transcritas com Whisper e tratadas como texto',
+      'LLM local (Qwen 2.5 via Ollama) transforma a pergunta em uma consulta SQL estruturada',
+      'Servidor MCP (FastMCP) expõe o banco SQLite de equipes e campeões como ferramenta para a IA',
+      'Operações de escrita liberadas só para administradores, identificados pelo ID do Telegram',
+      'Resposta final reescrita pela IA em linguagem natural para o usuário',
+    ],
+    stack: ['Python', 'MCP', 'FastMCP', 'Ollama', 'LlamaIndex', 'Whisper', 'SQLite', 'Telegram Bot API'],
+    image: mcp,
+    repo: 'https://github.com/vivianSantos0101/IHC',
   },
   {
     slug: 'portfolio-express',
