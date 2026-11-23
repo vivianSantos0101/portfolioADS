@@ -146,8 +146,8 @@ Site educativo que ensina a metodologia Scrum de forma simples, com textos, imag
 Pré-requisito: [Node.js](https://nodejs.org/) 20 ou mais recente.
 
 ```bash
-git clone https://github.com/vivianSantos0101/portfolio.git
-cd portfolio
+git clone https://github.com/vivianSantos0101/portfolioADS.git
+cd portfolioADS
 npm install
 npm run dev
 ```
@@ -227,7 +227,7 @@ O site é hospedado gratuitamente na **[Vercel](https://vercel.com/)**:
 ## 📁 Estrutura de pastas
 
 ```
-portfolio/
+portfolioADS/
 ├── public/
 │   └── favicon.svg
 ├── src/
