@@ -55,9 +55,13 @@ function ProjectEntry({ project }: { project: Project }) {
         <Stack items={project.stack} />
 
         <div className="project-links">
-          <a href={project.repo} target="_blank" rel="noreferrer">
-            Ver código
-          </a>
+          {project.repo ? (
+            <a href={project.repo} target="_blank" rel="noreferrer">
+              Ver código
+            </a>
+          ) : (
+            <span className="private-note">Código privado, disponível sob pedido</span>
+          )}
           {project.demo && (
             <a href={project.demo} target="_blank" rel="noreferrer">
               Abrir site

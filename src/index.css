@@ -519,6 +519,11 @@ p {
   font-weight: 700;
 }
 
+.private-note {
+  font-weight: 400;
+  color: var(--slate);
+}
+
 /* Etapas do Aerocode: sequência real AV1 → AV2 → AV3 */
 .stages {
   list-style: none;

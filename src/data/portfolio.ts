@@ -29,7 +29,8 @@ export type Project = {
   role?: string
   stack: string[]
   image?: string
-  repo: string
+  /** Deixe sem repo se o código for privado */
+  repo?: string
   demo?: string
   video?: string
   /** Projetos que evoluíram em etapas (ex.: AV1 → AV2 → AV3) */
@@ -168,7 +169,6 @@ export const projects: Project[] = [
     ],
     stack: ['Python', 'MCP', 'FastMCP', 'Ollama', 'LlamaIndex', 'Whisper', 'SQLite', 'Telegram Bot API'],
     image: mcp,
-    repo: 'https://github.com/vivianSantos0101/IHC',
   },
   {
     slug: 'portfolio-express',

@@ -88,7 +88,7 @@ Bot do Telegram que responde perguntas sobre a Fórmula 1 em linguagem natural, 
 - LLM local (Qwen 2.5 via Ollama + LlamaIndex) gera a consulta estruturada
 - Escrita no banco liberada só para administradores (ID do Telegram)
 
-`Python` `MCP` `FastMCP` `Ollama` `Whisper` `SQLite` `Telegram Bot API` · [Repositório](https://github.com/vivianSantos0101/IHC)
+`Python` `MCP` `FastMCP` `Ollama` `Whisper` `SQLite` `Telegram Bot API` · *Código privado, disponível sob pedido*
 
 #### Portfólio em Express · Projeto pessoal
 Primeira versão deste portfólio, renderizada no servidor, com painel de administrador para editar projetos, habilidades e idiomas em MySQL e formulário que envia e-mail.
@@ -179,7 +179,7 @@ Todo o texto do site fica em [`src/data/portfolio.ts`](src/data/portfolio.ts). P
   highlights: ['Destaque 1', 'Destaque 2'],
   stack: ['React', 'Node.js'],
   image: minhaLogo,                  // opcional: importe de src/assets/projects
-  repo: 'https://github.com/...',
+  repo: 'https://github.com/...',   // opcional: sem repo, mostra "código privado"
   demo: 'https://...',               // opcional
   video: 'https://youtu.be/...',     // opcional
 }
