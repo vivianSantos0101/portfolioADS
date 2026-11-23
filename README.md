@@ -8,7 +8,7 @@ Fui enfermeira antes de programar. Na enfermagem aprendi a trabalhar sob pressã
 
 Neste portfólio reúno os projetos que desenvolvi durante o curso, do 1º ao 5º semestre. A maioria foi feita em equipe, com Scrum e validação com clientes reais, pela metodologia de **Aprendizagem por Projeto Integrado (API)**. Desde o 3º semestre faço parte da **[Equipe Sul](https://github.com/Equipe-SUL)**.
 
-🌐 **Versão em site:** [LINK-DO-SITE](LINK-DO-SITE)
+
 📧 [vivian.stoliveira@gmail.com](mailto:vivian.stoliveira@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/vivianstoliveira/) · 💻 [GitHub](https://github.com/vivianSantos0101)
 
 <br clear="right">
