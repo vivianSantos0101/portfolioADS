@@ -1,147 +1,235 @@
-# Vivian Santos · Portfólio
+.# Portfólio · Vivian Santos
 
-Portfólio pessoal em **React + TypeScript** com todos os meus trabalhos da faculdade de Análise e Desenvolvimento de Sistemas na **FATEC São José dos Campos**.
+**Análise e Desenvolvimento de Sistemas · FATEC São José dos Campos · 5º semestre**
 
-🔗 **Site no ar:** [LINK-DO-DEPLOY](LINK-DO-DEPLOY)
+<img src="src/assets/vivian.webp" alt="Foto de Vivian Santos" width="160" align="right">
 
-[![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
-[![EmailJS](https://img.shields.io/badge/EmailJS-FF6C37?style=for-the-badge&logo=maildotru&logoColor=white)](https://www.emailjs.com/)
+Fui enfermeira antes de programar. Na enfermagem aprendi a trabalhar sob pressão, a me comunicar com clareza e a cuidar dos detalhes, e hoje levo isso para o desenvolvimento de software: entender bem o problema antes de propor a solução.
 
----
+Neste portfólio reúno os projetos que desenvolvi durante o curso, do 1º ao 5º semestre. A maioria foi feita em equipe, com Scrum e validação com clientes reais, pela metodologia de **Aprendizagem por Projeto Integrado (API)**. Desde o 3º semestre faço parte da **[Equipe Sul](https://github.com/Equipe-SUL)**.
 
-## 📌 Sumário
+🌐 **Versão em site:** [LINK-DO-SITE](LINK-DO-SITE)
+📧 [vivian.stoliveira@gmail.com](mailto:vivian.stoliveira@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/vivianstoliveira/) · 💻 [GitHub](https://github.com/vivianSantos0101)
 
-- [Sobre mim](#-sobre-mim)
-- [Projetos](#-projetos)
-- [Funcionalidades do site](#-funcionalidades-do-site)
-- [Tecnologias](#-tecnologias)
-- [Como rodar localmente](#-como-rodar-localmente)
-- [Como atualizar o conteúdo](#-como-atualizar-o-conteúdo)
-- [Formulário de contato (EmailJS)](#-formulário-de-contato-emailjs)
-- [Deploy](#-deploy)
-- [Estrutura de pastas](#-estrutura-de-pastas)
-- [Da versão Express para a versão React](#-da-versão-express-para-a-versão-react)
-- [Contato](#-contato)
+<br clear="right">
 
 ---
 
-## 👩‍💻 Sobre mim
+## Sumário
 
-Fui enfermeira antes de programar. Hoje estou no 5º semestre de **Análise e Desenvolvimento de Sistemas na FATEC São José dos Campos** e levo para o desenvolvimento a mesma atenção aos detalhes, comunicação clara e calma sob pressão que a enfermagem me ensinou.
+| Semestre | Projeto | Tipo | Principais tecnologias |
+|:---:|---|---|---|
+| 5º | [Stentio](#stentio) | API · Equipe Sul | Java, Spring Boot, PostgreSQL, RabbitMQ, Docker |
+| 4º | [Blueprint](#blueprint) | API · Equipe Sul | React, Django, PostgreSQL, Ollama |
+| 3º | [EntreNova Flix](#entrenova-flix) | API · Equipe Sul | React, Node.js, Supabase, Gemini/OpenAI |
+| 3º | [Aerocode](#aerocode) | Técnicas de Programação | TypeScript, React, Express, Prisma |
+| 3º | [MCP Formula 1](#mcp-formula-1) | Interação Humano-Computador | Python, MCP, Ollama, Whisper |
+| 3º | [Portfólio em Express](#portfólio-em-express) | Projeto pessoal | Node.js, Express, EJS, MySQL |
+| 2º | [BotEcho](#botecho) | API · Equipe Echo | Java, Ollama |
+| 2º | [Gerenciador de Cursos](#gerenciador-de-cursos) | Linguagem de Programação | Java, Swing, MySQL |
+| 1º | [EasyScrum](#easyscrum) | API · Equipe Echo | Python, Flask |
 
-Gosto de construir soluções completas, da interface até a regra de negócio e o banco de dados, e tenho interesse especial em aplicações com **inteligência artificial**. Quase todos os meus projetos foram feitos em equipe, com **Scrum** e validação com clientes reais, pela metodologia de Aprendizagem por Projeto Integrado (API) da FATEC. Desde o 3º semestre faço parte da **Equipe Sul**, onde desenvolvi o EntreNova Flix, o Blueprint e agora o Stentio.
-
-🌎 Inglês e espanhol fluentes.
-
----
-
-## 🚀 Projetos
-
-### 5º semestre (ago – dez 2026)
-
-#### Stentio · Projeto Integrador (API) · Equipe Sul · *em desenvolvimento*
-Sistema que centraliza a operação de uma agência de tradução: pedido do cliente, orçamento com aprovação por link, ordem de serviço com etapas, alocação de profissionais e fechamento financeiro. Arquitetura de microsserviços com Docker Compose.
-
-**O que eu desenvolvi (backend, 80+ commits):**
-- Fluxo da ordem de serviço: etapas, modelos de workflow e alocação de profissionais com log de auditoria
-- Portal do profissional: auto-cadastro, convite por e-mail aos elegíveis, aceite, recusa e entrega das etapas
-- Revisão e entrega final da OS, com e-mail ao cliente e documento em anexo
-- Certificação de profissionais por par de idiomas, com fila de análise e aprovação
-- CRUD de recursos e de tabela de preços, perfis de acesso com JWT e testes automatizados
-
-`Java` `Spring Boot` `PostgreSQL` `MongoDB` `RabbitMQ` `Docker` `React` `TypeScript` · [Repositório](https://github.com/Equipe-SUL/Stentio)
-
-### 4º semestre (mar – jun 2026)
-
-#### Blueprint · Projeto Integrador (API) · Equipe Sul
-Aplicação web que gera automaticamente memoriais de cálculo, especificações e orçamentos de obras para o **Exército Brasileiro** a partir de arquivos CAD, CSV ou Excel.
-- Cálculo dos quantitativos de materiais em Python e conferência com a tabela SINAPI
-- Documentos técnicos gerados com IA local (Ollama), com prévia e exportação em PDF e DOCX
-- Cadastro de obras, login e painel para o engenheiro
-
-`React` `TypeScript` `Python` `Django` `PostgreSQL` `Ollama` · [Repositório](https://github.com/Equipe-SUL/Blueprint) · [Vídeo](https://www.youtube.com/watch?v=aQZifRPN6wY)
-
-### 3º semestre (ago – dez 2025)
-
-#### EntreNova Flix · Projeto Integrador (API) · Equipe Sul
-Sistema que aplica entrevistas estruturadas com empresas e gera, com IA, diagnósticos e trilhas de treinamento personalizadas.
-- Mini diagnóstico para visitantes e relatório completo para gestores de RH
-- Chatbot que continua a entrevista depois do formulário
-- Relatórios gerados com Gemini e OpenAI e enviados por e-mail
-
-`React` `TypeScript` `Node.js` `Express` `Supabase` `Gemini` `OpenAI` `Chart.js` · [Repositório](https://github.com/Equipe-SUL/EntreNova-Flix)
-
-#### Aerocode · Técnicas de Programação (AV1 → AV2 → AV3)
-Sistema de gestão da produção de aeronaves que construí em três etapas, cada uma subindo um nível:
-
-| Etapa | O que mudou | Tecnologias | Código |
-|---|---|---|---|
-| **AV1** | Aplicação de linha de comando com as regras de negócio modeladas em classes | `TypeScript` `POO` | [AV1](https://github.com/vivianSantos0101/AV1) |
-| **AV2** | Interface web com rotas e telas por perfil | `React` `TypeScript` `Vite` | [AV2](https://github.com/vivianSantos0101/AV2) |
-| **AV3** | API REST, banco de dados, login com JWT e três perfis de acesso | `Express` `Prisma` `MariaDB` `JWT` `Zod` | [AV3](https://github.com/vivianSantos0101/AV3) |
-
-#### MCP Formula 1 · Interação Humano-Computador (IHC)
-Bot do Telegram que responde perguntas sobre a Fórmula 1 em linguagem natural, por **texto ou áudio**. Uma IA local transforma a pergunta em consulta SQL, e um **servidor MCP** expõe o banco de dados como ferramenta para ela.
-- Áudios transcritos com Whisper
-- LLM local (Qwen 2.5 via Ollama + LlamaIndex) gera a consulta estruturada
-- Escrita no banco liberada só para administradores (ID do Telegram)
-
-`Python` `MCP` `FastMCP` `Ollama` `Whisper` `SQLite` `Telegram Bot API` · *Código privado, disponível sob pedido*
-
-#### Portfólio em Express · Projeto pessoal
-Primeira versão deste portfólio, renderizada no servidor, com painel de administrador para editar projetos, habilidades e idiomas em MySQL e formulário que envia e-mail.
-
-`Node.js` `Express` `EJS` `MySQL` `Nodemailer` · [Repositório](https://github.com/vivianSantos0101/portfolioExpress)
-
-### 2º semestre (fev – jun 2025)
-
-#### BotEcho · Projeto Integrador (API) · Equipe Echo
-IDE desktop com IA local que analisa, explica e otimiza código Python, executa o código, gera documentação e integra com o GitHub.
-
-`Java` `Ollama` `LLM` `Python` · [Repositório](https://github.com/EquipeEcho/botEcho)
-
-#### Gerenciador de Cursos · Linguagem de Programação
-Sistema desktop para uma universidade cadastrar cursos e alunos e emitir relatórios, com persistência em MySQL usando o padrão DAO.
-
-`Java` `Swing` `MySQL` `JDBC` · [Repositório](https://github.com/vivianSantos0101/GerenciadorCurso)
-
-### 1º semestre (ago – dez 2024)
-
-#### EasyScrum · Projeto Integrador (API) · Equipe Echo · **Product Owner**
-Site educativo que ensina a metodologia Scrum de forma simples, com textos, imagens e áudios produzidos pela equipe. Apresentado na Feira de Soluções da FATEC.
-
-`Python` `Flask` `HTML` `CSS` `JavaScript` `Bootstrap` · [Repositório](https://github.com/EquipeEcho/EasyScrum) · [Vídeo](https://youtu.be/RhitfLJMUBE)
+Também neste documento: [Competências](#competências) · [Formação e certificações](#formação-e-certificações) · [Sobre este repositório](#sobre-este-repositório)
 
 ---
 
-## ✨ Funcionalidades do site
+## 5º semestre · ago – dez 2026
 
-- **Linha do tempo de projetos por semestre**, do mais recente ao primeiro
-- **Evolução do Aerocode** mostrada etapa por etapa (AV1 → AV2 → AV3)
-- **Formulário de contato** com validação e envio de e-mail pelo EmailJS, sem precisar de servidor
-- Proteção simples contra spam (campo invisível *honeypot*)
-- **Responsivo**, com menu próprio para celular
-- **Acessível**: navegação por teclado, foco visível, link "Pular para o conteúdo", mensagens de erro ligadas aos campos e animação desligada para quem prefere movimento reduzido
-- Todo o conteúdo em **um único arquivo tipado** (`src/data/portfolio.ts`)
+### Stentio
+
+<img src="https://skillicons.dev/icons?i=java,spring,postgres,mongodb,rabbitmq,docker,react,ts" alt="Tecnologias" height="36">
+
+**API 5º semestre · Equipe Sul · em desenvolvimento** · [Repositório](https://github.com/Equipe-SUL/Stentio)
+
+**Desafio.** Agências de tradução controlam o trabalho em planilhas, e-mails e conversas soltas: o orçamento é montado à mão, as etapas de tradução, revisão e formatação são distribuídas por mensagem e não existe registro confiável de quem fez o quê, em que prazo e a que custo.
+
+**Solução.** Um sistema web que centraliza a operação da agência: cadastros, pedido do cliente, orçamento com aprovação por link, ordem de serviço dividida em etapas, alocação de profissionais e fechamento financeiro. A arquitetura é de microsserviços (autenticação, núcleo de negócio, e-mail, importação e chatbot) orquestrados com Docker Compose.
+
+**Minha contribuição.** Atuei como desenvolvedora backend no serviço principal (Java + Spring Boot), com mais de 80 commits:
+- Fluxo da **ordem de serviço**: entidade de etapas, modelos de workflow, montagem da sequência e bloqueios de alteração
+- **Alocação de profissionais** às etapas, com regras de elegibilidade e log de auditoria
+- **Portal do profissional**: auto-cadastro, verificação, convite por e-mail, aceite, recusa e entrega dos arquivos
+- **Revisão e entrega final** da OS, com envio do documento ao cliente por e-mail
+- **Certificação por par de idiomas**, com fila de análise, aprovação e rejeição
+- CRUD de recursos e de tabela de preços, perfis de acesso com JWT e **testes automatizados**
+
+**O que aprendi.** Desenvolver em uma arquitetura de microsserviços, mensageria com RabbitMQ, modelar regras de negócio complexas em Spring Boot e escrever testes para garantir que uma mudança não quebre o restante do fluxo.
 
 ---
 
-## 🛠️ Tecnologias
+## 4º semestre · mar – jun 2026
 
-| Área | Tecnologia |
+### Blueprint
+
+<img src="https://skillicons.dev/icons?i=react,ts,python,django,postgres" alt="Tecnologias" height="36">
+
+**API 4º semestre · Equipe Sul · cliente: Exército Brasileiro** · [Repositório](https://github.com/Equipe-SUL/Blueprint) · [Vídeo de demonstração](https://www.youtube.com/watch?v=aQZifRPN6wY)
+
+**Desafio.** Para licitar uma obra, os engenheiros do Exército produzem à mão memoriais de cálculo, especificações e orçamentos seguindo as normas da ABNT, desde a leitura dos arquivos CAD até a formatação final. São horas de trabalho especializado por obra.
+
+**Solução.** Uma aplicação web que recebe os arquivos da obra (CAD, CSV ou Excel), calcula os quantitativos de materiais em Python, confere os itens com a tabela SINAPI e usa IA local (Ollama) para gerar os documentos técnicos padronizados, com prévia e exportação em PDF e DOCX.
+
+**Minha contribuição.** Atuei como desenvolvedora na equipe ao longo das três sprints.
+
+**O que aprendi.** Trabalhar com um cliente de um domínio técnico que eu não conhecia (engenharia e orçamento de obras), backend em Django e uso de IA para gerar documentos que precisam seguir normas rígidas.
+
+---
+
+## 3º semestre · ago – dez 2025
+
+### EntreNova Flix
+
+<img src="src/assets/projects/entrenova.webp" alt="Logo EntreNova" width="72" align="right">
+
+<img src="https://skillicons.dev/icons?i=react,ts,nodejs,express,supabase" alt="Tecnologias" height="36">
+
+**API 3º semestre · Equipe Sul · cliente: Entrenova** · [Repositório](https://github.com/Equipe-SUL/EntreNova-Flix)
+
+**Desafio.** A Entrenova queria validar produtos de treinamento corporativo e, para isso, precisava entender as necessidades reais das empresas por meio de entrevistas estruturadas.
+
+**Solução.** Um sistema que aplica um diagnóstico às empresas (formulário + chatbot) e gera, com IA (Gemini e OpenAI), relatórios personalizados e uma trilha de treinamento sugerida, enviada por e-mail. Um painel com gráficos reúne os dados para a Entrenova.
+
+**Minha contribuição.** Atuei como desenvolvedora na equipe.
+
+**O que aprendi.** Integrar modelos de IA em um produto real, usar o Supabase como banco e trabalhar com React e TypeScript em um projeto em equipe.
+
+<br clear="right">
+
+### Aerocode
+
+<img src="src/assets/projects/aerocode.webp" alt="Logo Aerocode" width="72" align="right">
+
+**Técnicas de Programação · AV1, AV2 e AV3 · individual**
+
+Sistema de gestão da produção de aeronaves (aeronaves, peças, etapas, testes e funcionários) que construí em três avaliações, cada uma subindo um nível em cima da anterior:
+
+| Avaliação | O que construí | Tecnologias | Código |
+|:---:|---|---|---|
+| **AV1** | Aplicação de linha de comando com as regras de negócio modeladas em classes e geração de relatórios | TypeScript, POO | [AV1](https://github.com/vivianSantos0101/AV1) |
+| **AV2** | Interface web para o mesmo sistema, com rotas e telas por perfil | React, TypeScript, Vite | [AV2](https://github.com/vivianSantos0101/AV2) |
+| **AV3** | API REST com banco de dados, login com JWT, senhas com bcrypt, três perfis de acesso e testes de carga dos endpoints | Express, Prisma, MariaDB, JWT, Zod | [AV3](https://github.com/vivianSantos0101/AV3) |
+
+**O que aprendi.** Como um mesmo sistema evolui: começar pela modelagem orientada a objetos, depois separar interface e regra de negócio e, por fim, levar tudo para uma arquitetura cliente-servidor com autenticação e banco de dados.
+
+<br clear="right">
+
+### MCP Formula 1
+
+<img src="src/assets/projects/mcp.webp" alt="Logo MCP Formula 1" width="72" align="right">
+
+**Interação Humano-Computador (IHC) · código privado, disponível sob pedido**
+
+**Desafio.** Permitir que qualquer pessoa consulte dados da Fórmula 1 conversando naturalmente, sem saber SQL nem usar uma interface complicada.
+
+**Solução.** Um bot do Telegram que aceita perguntas por **texto ou áudio**. O áudio é transcrito com Whisper, uma IA que roda localmente (Qwen 2.5 via Ollama + LlamaIndex) transforma a pergunta em uma consulta estruturada e um **servidor MCP** (FastMCP) executa essa consulta no banco SQLite de equipes e campeões. A resposta volta em linguagem natural. Operações de escrita no banco são liberadas só para administradores, identificados pelo ID do Telegram.
+
+**O que aprendi.** Pensar a interação do ponto de vista do usuário (voz e linguagem natural como interface), usar o Model Context Protocol para dar ferramentas a uma IA e limitar o que a IA pode fazer no banco por questões de segurança.
+
+<br clear="right">
+
+### Portfólio em Express
+
+**Projeto pessoal · individual** · [Repositório](https://github.com/vivianSantos0101/portfolioExpress)
+
+Primeira versão do meu portfólio, renderizada no servidor com Express e EJS. Tem painel de administrador com login para editar projetos, habilidades e idiomas guardados em MySQL e formulário de propostas que envia e-mail com Nodemailer.
+
+**O que aprendi.** Rotas e middlewares no Express, sessões e autenticação, CRUD com MySQL e envio de e-mails pelo servidor.
+
+---
+
+## 2º semestre · fev – jun 2025
+
+### BotEcho
+
+<img src="src/assets/projects/botecho.webp" alt="Logo BotEcho" width="72" align="right">
+
+**API 2º semestre · Equipe Echo** · [Repositório](https://github.com/EquipeEcho/botEcho)
+
+**Desafio.** Ajudar desenvolvedores iniciantes a melhorar seu código e a entender trechos que não conhecem.
+
+**Solução.** Uma IDE desktop em Java com IA rodando localmente (Ollama) que analisa, explica e otimiza código Python, executa o código, gera documentação automaticamente, cria gráficos com Matplotlib e se integra ao GitHub.
+
+**Minha contribuição.** Fiz parte do time de desenvolvimento (Scrum Team).
+
+**O que aprendi.** Desenvolvimento desktop em Java, integração com modelos de linguagem locais e o primeiro contato com Scrum ao longo de três sprints com entregas reais.
+
+<br clear="right">
+
+### Gerenciador de Cursos
+
+<img src="src/assets/projects/gerenciador-cursos.webp" alt="Logo Gerenciador de Cursos" width="72" align="right">
+
+**Linguagem de Programação · 2ª avaliação · individual** · [Repositório](https://github.com/vivianSantos0101/GerenciadorCurso)
+
+Sistema desktop para uma universidade cadastrar cursos e alunos e emitir relatórios. Interface em Java Swing, persistência em MySQL usando o padrão **DAO** e uma fábrica de conexões, com manual do usuário e script SQL documentados.
+
+**O que aprendi.** Organizar um projeto Java em camadas (modelo, acesso a dados e interface), JDBC e modelagem de banco relacional.
+
+<br clear="right">
+
+---
+
+## 1º semestre · ago – dez 2024
+
+### EasyScrum
+
+<img src="src/assets/projects/easyscrum.webp" alt="Logo EasyScrum" width="72" align="right">
+
+**API 1º semestre · Equipe Echo · Product Owner** · [Repositório](https://github.com/EquipeEcho/EasyScrum) · [Vídeo de demonstração](https://youtu.be/RhitfLJMUBE)
+
+**Desafio.** Explicar a metodologia Scrum de forma simples para pessoas sem experiência em métodos ágeis.
+
+**Solução.** Um site educativo com textos, imagens e áudios produzidos pela própria equipe, desenvolvido em Python com Flask e apresentado na Feira de Soluções da FATEC.
+
+**Minha contribuição.** Fui a **Product Owner** do time: organizei e priorizei o backlog, escrevi as histórias de usuário e validei as entregas de cada sprint.
+
+**O que aprendi.** Os papéis e cerimônias do Scrum na prática, comunicação entre equipe e cliente e os fundamentos de desenvolvimento web.
+
+<br clear="right">
+
+---
+
+## Competências
+
+**Linguagens e frameworks**
+
+<img src="https://skillicons.dev/icons?i=java,spring,ts,js,python,django,react,nodejs,express" alt="Linguagens e frameworks">
+
+**Bancos de dados e infraestrutura**
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,sqlite,prisma,rabbitmq,docker,git,github">
+
+**Inteligência artificial:** LLMs locais com Ollama, APIs da OpenAI e do Gemini, Model Context Protocol (MCP), Whisper
+
+**Metodologias:** Scrum (atuei como Product Owner e como desenvolvedora), histórias de usuário, Jira
+
+**Interpessoais:** comunicação clara, trabalho em equipe, resolução de problemas, adaptabilidade, gestão do tempo, criatividade
+
+**Idiomas:** português (nativo), inglês (fluente), espanhol (fluente)
+
+---
+
+## Formação e certificações
+
+**Análise e Desenvolvimento de Sistemas** · FATEC São José dos Campos · 2024 – em andamento (5º semestre)
+
+| Certificação | Instituição |
 |---|---|
-| Interface | React 19, TypeScript |
-| Build | Vite |
-| Estilo | CSS puro com variáveis (sem framework) |
-| E-mail | EmailJS |
-| Qualidade | Oxlint, checagem de tipos com `tsc` |
-| Deploy | Vercel (gratuito) |
+| NDG Linux | Cisco Networking Academy |
+| IT Essentials | Cisco Networking Academy |
+| Introdução à Programação Orientada a Objetos | Fundação Bradesco |
+| Análise de Dados no Power BI | Fundação Bradesco |
 
 ---
 
-## 💻 Como rodar localmente
+## Sobre este repositório
+
+Além deste README, o repositório traz a **versão em site** do portfólio, feita com **React + TypeScript + Vite**: linha do tempo de projetos por semestre, formulário de contato com validação e envio por EmailJS, layout responsivo e cuidados de acessibilidade. Todo o conteúdo do site fica em um único arquivo, [`src/data/portfolio.ts`](src/data/portfolio.ts).
+
+<details>
+<summary><strong>Como rodar o site localmente</strong></summary>
+
+<br>
 
 Pré-requisito: [Node.js](https://nodejs.org/) 20 ou mais recente.
 
@@ -154,121 +242,8 @@ npm run dev
 
 Abra `http://localhost:5173`.
 
-| Comando | O que faz |
-|---|---|
-| `npm run dev` | Servidor de desenvolvimento com recarga automática |
-| `npm run build` | Checa os tipos e gera a versão de produção em `dist/` |
-| `npm run preview` | Abre localmente a versão de produção |
-| `npm run lint` | Procura problemas no código |
+Para o formulário de contato enviar e-mails, copie `.env.example` para `.env` e preencha as chaves do [EmailJS](https://www.emailjs.com/). Sem elas o site funciona normalmente e o formulário mostra o e-mail para contato direto.
 
----
+O deploy é feito gratuitamente na [Vercel](https://vercel.com/), que publica uma nova versão a cada `git push` na branch `main`.
 
-## ✏️ Como atualizar o conteúdo
-
-Todo o texto do site fica em [`src/data/portfolio.ts`](src/data/portfolio.ts). Para adicionar um projeto, copie um item da lista `projects` e altere os campos:
-
-```ts
-{
-  slug: 'meu-projeto',
-  title: 'Meu Projeto',
-  semester: 4,                       // agrupa na linha do tempo
-  period: 'fev – jun 2026',
-  context: 'Projeto Integrador (API) · Equipe X',
-  role: 'Scrum Master',              // opcional
-  summary: 'Uma frase dizendo o que o projeto faz.',
-  highlights: ['Destaque 1', 'Destaque 2'],
-  stack: ['React', 'Node.js'],
-  image: minhaLogo,                  // opcional: importe de src/assets/projects
-  repo: 'https://github.com/...',   // opcional: sem repo, mostra "código privado"
-  demo: 'https://...',               // opcional
-  video: 'https://youtu.be/...',     // opcional
-}
-```
-
-Faça o commit e o deploy acontece sozinho.
-
----
-
-## 📨 Formulário de contato (EmailJS)
-
-O formulário envia e-mail direto do navegador pelo [EmailJS](https://www.emailjs.com/), que tem plano gratuito de 200 e-mails por mês.
-
-1. Crie uma conta no EmailJS e conecte seu Gmail em **Email Services**. Anote o **Service ID**.
-2. Em **Email Templates**, crie um template usando estas variáveis:
-   ```
-   Assunto: Nova mensagem do portfólio: {{motivo}}
-
-   Nome: {{nome}}
-   E-mail: {{email}}
-   Empresa: {{empresa}}
-   Urgência: {{urgencia}}
-
-   {{mensagem}}
-   ```
-   Em **Reply To**, coloque `{{email}}` para responder direto para a pessoa. Anote o **Template ID**.
-3. Em **Account → General**, copie a **Public Key**.
-4. Copie `.env.example` para `.env` e preencha as três variáveis. No deploy, cadastre as mesmas variáveis nas configurações do projeto.
-
-Sem essas variáveis o site funciona normalmente e o formulário mostra o e-mail para contato direto.
-
----
-
-## 🌐 Deploy
-
-O site é hospedado gratuitamente na **[Vercel](https://vercel.com/)**:
-
-1. Entre na Vercel com sua conta do GitHub.
-2. Clique em **Add New → Project** e importe este repositório. A Vercel detecta o Vite sozinha.
-3. Em **Environment Variables**, adicione as três variáveis do EmailJS.
-4. Clique em **Deploy**. A cada `git push` na branch `main`, o site é atualizado automaticamente.
-
----
-
-## 📁 Estrutura de pastas
-
-```
-portfolioADS/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/            # foto e logos dos projetos (WebP)
-│   ├── components/        # uma seção do site por componente
-│   │   ├── Header.tsx
-│   │   ├── Hero.tsx       # nome + animação do ECG que vira </>
-│   │   ├── About.tsx
-│   │   ├── Projects.tsx   # linha do tempo por semestre
-│   │   ├── Skills.tsx
-│   │   ├── Education.tsx
-│   │   ├── Contact.tsx    # formulário + validação + EmailJS
-│   │   └── Footer.tsx
-│   ├── data/
-│   │   └── portfolio.ts   # TODO o conteúdo do site
-│   ├── App.tsx
-│   ├── index.css          # design tokens e estilos
-│   └── main.tsx
-├── .env.example
-└── index.html
-```
-
----
-
-## 🔄 Da versão Express para a versão React
-
-Este projeto substitui o meu [portfólio em Express](https://github.com/vivianSantos0101/portfolioExpress). O que mudou:
-
-| Antes (Express + EJS + MySQL) | Agora (React + TypeScript) |
-|---|---|
-| Páginas renderizadas no servidor | Página única renderizada no navegador |
-| Conteúdo no MySQL, editado por painel admin | Conteúdo em um arquivo tipado, editado por commit |
-| E-mail com Nodemailer no servidor | E-mail com EmailJS direto do navegador |
-| Precisava de servidor e banco para rodar | Site estático, com hospedagem gratuita |
-
-A lógica de validação do formulário foi mantida: campos obrigatórios, formato de e-mail e o campo extra que aparece quando o assunto é "Outro".
-
----
-
-## 📫 Contato
-
-- 📧 [vivian.stoliveira@gmail.com](mailto:vivian.stoliveira@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/vivianstoliveira/)
-- 💻 [GitHub](https://github.com/vivianSantos0101)
+</details>
